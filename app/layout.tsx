@@ -18,18 +18,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>Header</div>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/dashboard">Dashboard</Link>
-        </li>
-        <li>
-          <Link href="/settings">Setting</Link>
-        </li>
-        {children}
-        <div>Footer</div>
+        <div className="container mx-auto">
+          <div>Header</div>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/dashboard">Dashboard</Link>
+          </li>
+          <li>
+            <Link href="/settings">Setting</Link>
+          </li>
+          <li>
+            <Link href="/search">Search</Link>
+          </li>
+          {children}
+        </div>
       </body>
     </html>
   );
